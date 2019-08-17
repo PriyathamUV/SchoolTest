@@ -31,12 +31,15 @@ public class MarksDemoServlet extends HttpServlet {
 		int English=Integer.parseInt(request.getParameter("English"));
 		int Math=Integer.parseInt(request.getParameter("Math"));
 		int Science=Integer.parseInt(request.getParameter("Science"));
+		int Social=Integer.parseInt(request.getParameter("Social"));
+		
 		MarksDemo m=new MarksDemo();
 		m.setName(name);
 		m.setHindi(hindi);
 		m.setEnglish(English);
 		m.setMath(Math);
 		m.setScience(Science);
+		m.setSocial(Social);
 		MarksDemoDao m1=new MarksDemoDao();
 	String status=m1.save(m);
 	System.out.println(status);

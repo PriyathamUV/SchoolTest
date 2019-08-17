@@ -2,7 +2,7 @@ package com;
 
 public class MarksDemo {
 	
-	int Math,Hindi,English,Science;
+	int Math,Hindi,English,Science,Social;
 	String name;
 	public int getMath() {
 		return Math;
@@ -27,6 +27,12 @@ public class MarksDemo {
 	}
 	public void setScience(int science) {
 		Science = science;
+	}
+	public int getSocial() {
+		return Social;
+	}
+	public void setSocial(int social) {
+		Social = social;
 	}
 	public String getName() {
 		return name;

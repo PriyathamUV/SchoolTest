@@ -18,6 +18,7 @@ public class MarksDemoDao
             ps.setInt(3, d.getEnglish());
             ps.setInt(4, d.getMath());
             ps.setInt(5, d.getScience());
+            ps.setInt(5, d.getSocial());
             
            
 			n=ps.executeUpdate();
