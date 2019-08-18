@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 15%;
+    padding: 30px;
+    height: 550px;
+    border-style: solid;
+    border-width: 1px;  
+    } /* Should be removed. Only for demonstration */
+    
+ .column2 {
+    float: left;
+    width: 70%;
+    padding: 10px;
+    height: 550px;
+    border-style: solid;
+    border-width: 1px;
+    }
+ .column3 {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    height: 550px;
+    border-style: solid;
+    border-width: 1px;
+    }
+    
+    .row
+    {
+    border-style: solid;
+    border-width: 1px;
+    }
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+</head>
+<body>
+
+<center>
+<h2>MY E-LEARNING</h2>
+</center>
+
+<div class="row" style="background-color:lightgrey;">
+
+<div class="column1"  >
+<a href="intro.html"  style="color:black"> INTRODUCTION TO JAVA</a><br>
+<br>
+<a href="oops.html"   style="color:black">OOPS CONCEPTS</a><br>
+<br>
+<a href="strings.html"  style="color:black" > STRINGS</a><br>
+<br>
+<a href="collections.html"  style="color:black" > COLLECTIONS</a><br>
+<br>
+<a href="multi.html"  style="color:black" > MULTI THREADING</a><br>
+<br>
+<a href="exception.html"  style="color:black" > EXCEPTION HANDLING</a><br>
+<br>
+<a href="swings.html"  style="color:black" > SWINGS</a><br>
+<br>
+<a href="generics.html"  style="color:black" > GENERICS</a><br>
+<br>
+<a href="synchronisation.html"  style="color:black" > SYNCHRONISATION</a><br>
+<br>
+<a href="JDBC.html"   style="color:black">JDBC</a><br>
+<br>
+<a href="servlets.html"   style="color:black">SERVLETS</a><br>
+<br>
+<a href="jsp.html"   style="color:black">JSP</a><br>
+<br>
+ </div>
+ 
+  <div class="column2" >
+ <center>
+   <h5>INTRODUCTION TO JAVA:</h5>
+  
+ <p style="text-align:justify">
+ Our core Java programming tutorial is designed for students and working 
+  professionals. Java is an object-oriented, class-based, concurrent, secured
+   and general-purpose computer-programming language. It is a widely used robust technology.
+What is Java
+
+Java is a programming language and a platform.
+
+Java is a high level, robust, secured and object-oriented programming language.
+
+Platform: Any hardware or software environment in which a program runs,
+ is known as a platform. Since Java has its own runtime environment (JRE)
+  and API, it is called platform.
+  
+  Types of Java Applications
+There are mainly 4 types of applications that can be created using java programming:
+
+1) Standalone Application
+Standalone applications are also known as desktop applications or window-based applications. These are traditional software that we need to install on every machine. Example of standalone applications are: Media player, antivirus etc. AWT and Swing are used in java for creating standalone applications.
+
+2) Web Application
+An application that runs on the server side and creates dynamic page, is called web application. Currently, Servlet, JSP, Struts, Spring, Hibernate, JSF etc. technologies are used for creating web applications in java.
+
+3) Enterprise Application
+An application that is distributed in nature, such as banking applications etc. is called enterprise application. It has the advantage of high level security, load balancing and clustering. In java, EJB is used for creating enterprise applications.
+
+4) Mobile Application
+An application that is created for mobile devices. Currently Android and Java ME are used for creating mobile applications.
+</p>
+
+<h5>JAVA PLATFORMS/EDITIONS:</h5>
+ <p style="text-align:justify">
+There are 4 platforms or editions of Java:
+
+1) Java SE (Java Standard Edition)
+It is a java programming platform. It includes Java programming APIs such as java.lang, java.io, java.net, java.util, java.sql, java.math etc. It includes core topics like OOPs, String, Regex, Exception, Inner classes, Multithreading, I/O Stream, Networking, AWT, Swing, Reflection, Collection etc.
+
+2) Java EE (Java Enterprise Edition)
+It is an enterprise platform which is mainly used to develop web and enterprise applications. It is built on the top of Java SE platform. It includes topics like Servlet, JSP, Web Services, EJB, JPA etc.
+
+3) Java ME (Java Micro Edition)
+It is a micro platform which is mainly used to develop mobile applications.
+
+4) JavaFx
+It is used to develop rich internet applications. It uses light-weight user interface API.
+
+The main objective of Java programming language creation was to make it portable, simple and secure programming language. Apart from this, there are also some awesome features which play important role in the popularity of this language. The features of Java are also known as java buzzwords.
+
+A list of most important features of Java language are given below.
+  
+  
+  <a style="background-color: grey;
+    border: none;
+    /* color: white; */
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float:left;border-radius: 12px; position: absolute; bottom: 0;
+    left: 0;" href="java.html" ><button>BACK</button></a>
+  
+  <a style="background-color: grey;
+    border: none;
+    /* color: white; */
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float:right;border-radius: 12px; position: absolute; bottom: 0;
+    right: 0;" href="oops.html" ><button>NEXT</button></a>
+    
+    </p>
+  
+  </div>
+  
+  <div class="column3" style="background-color:;">
+ <img src="java.jpg" alt="java" width="180" height="530"> 
+  </div>
+  
+</div>
+
+</body>
+</html>
