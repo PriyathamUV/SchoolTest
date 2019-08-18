@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 15%;
+    padding: 30px;
+    height: 550px;
+    border-style: solid;
+    border-width: 1px;  
+    } /* Should be removed. Only for demonstration */
+    
+ .column2 {
+    float: left;
+    width: 70%;
+    padding: 10px;
+    height: 550px;
+    border-style: solid;
+    border-width: 1px;
+    }
+ .column3 {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    height: 550px;
+    border-style: solid;
+    border-width: 1px;
+    }
+    
+    .row
+    {
+    border-style: solid;
+    border-width: 1px;
+    }
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+</head>
+<body>
+
+<center>
+<h2>MY E-LEARNING</h2>
+</center>
+
+<div class="row" style="background-color:lightgrey;">
+<div class="column" style="background-color:;">
+</div>
+<div class="column1"  >
+<a href="intro.html"  style="color:black"> INTRODUCTION TO JAVA</a><br>
+<br>
+<a href="oops.html"   style="color:black">OOPS CONCEPTS</a><br>
+<br>
+<a href="strings.html"  style="color:black" > STRINGS</a><br>
+<br>
+<a href="collections.html"  style="color:black" > COLLECTIONS</a><br>
+<br>
+<a href="multi.html"  style="color:black" > MULTI THREADING</a><br>
+<br>
+<a href="exception.html"  style="color:black" > EXCEPTION HANDLING</a><br>
+<br>
+<a href="swings.html"  style="color:black" > SWINGS</a><br>
+<br>
+<a href="generics.html"  style="color:black" > GENERICS</a><br>
+<br>
+<a href="synchronisation.html"  style="color:black" > SYNCHRONISATION</a><br>
+<br>
+<a href="JDBC.html"   style="color:black">JDBC</a><br>
+<br>
+<a href="servlets.html"   style="color:black">SERVLETS</a><br>
+<br>
+<a href="jsp.html"   style="color:black">JSP</a><br>
+<br>
+ </div>
+ 
+  <div class="column2" style="background-color:;">
+  <center>
+  <h4>
+Polymorphism in Java</h4>
+<p style="text-align:justify">
+Polymorphism in java is a concept by which we can perform a single action by different ways. Polymorphism is derived from 2 greek words: poly and morphs. The word "poly" means many and "morphs" means forms. So polymorphism means many forms.
+
+There are two types of polymorphism in java: compile time polymorphism and runtime polymorphism. We can perform polymorphism in java by method overloading and method overriding.
+
+If you overload static method in java, it is the example of compile time polymorphism. Here, we will focus on runtime polymorphism in java.
+
+Runtime Polymorphism in Java
+Runtime polymorphism or Dynamic Method Dispatch is a process in which a call to an overridden method is resolved at runtime rather than compile-time.
+
+In this process, an overridden method is called through the reference variable of a superclass. The determination of the method to be called is based on the object being referred to by the reference variable.
+
+</p>  
+  
+  <h4>Method Overloading in Java</h4>
+<p style="text-align:justify">
+If a class has multiple methods having same name but different in parameters, it is known as Method Overloading.
+
+If we have to perform only one operation, having same name of the methods increases the readability of the program.
+
+Suppose you have to perform addition of the given numbers but there can be any number of arguments, if you write the method such as a(int,int) for two parameters, and b(int,int,int) for three parameters then it may be difficult for you as well as other programmers to understand the behavior of the method because its name differs.
+
+So, we perform method overloading to figure out the program quickly.
+  
+  Advantage of method overloading
+Method overloading increases the readability of the program.
+
+Different ways to overload the method
+There are two ways to overload the method in java
+
+By changing number of arguments
+By changing the data type
+ <h4>
+Method Overriding in Java</h4>
+<p style="text-align:justify">
+If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in java.
+
+In other words, If subclass provides the specific implementation of the method that has been provided by one of its parent class, it is known as method overriding.
+
+Usage of Java Method Overriding
+Method overriding is used to provide specific implementation of a method that is already provided by its super class.
+Method overriding is used for runtime polymorphism
+
+Rules for Java Method Overriding
+method must have same name as in the parent class
+method must have same parameter as in the parent class.
+must be IS-A relationship (inheritance).
+ 
+  
+  <a style="background-color: grey;
+    border: none;
+    /* color: white; */
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float:left;border-radius: 12px; position: absolute; bottom: 0;
+    left: 0;" href="intro.html" ><button>BACK</button></a>
+  
+  <a style="background-color: grey;
+    border: none;
+    /* color: white; */
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float:right;border-radius: 12px; position: absolute; bottom: 0;
+    right: 0;" href="strings.html" ><button>NEXT</button></a></p>
+  </div>
+  
+  <div class="column3" style="background-color:;">
+   <img src="java.jpg" alt="java" width="180" height="530"> 
+  </div>
+  
+</div>
+
+</body>
+</html>
