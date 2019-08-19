@@ -4,24 +4,20 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class MarksDemoDao 
+public class AttendanceDao1 
 {
-	public static String save(MarksDemo d){
+	public static String save(Attendance d){
 		String status="";
         int n=0;  
         try{  
             Connection con=StudentDao.getConnection(); 
             System.out.println(con);
-            PreparedStatement ps=con.prepareStatement("insert into dbname.MarksDemo1 values (?,?,?,?,?)");  
-            ps.setString(1,d.getName());  
-            ps.setInt(2,d.getHindi());
-            ps.setInt(3, d.getEnglish());
-            ps.setInt(4, d.getMath());
-            ps.setInt(5, d.getScience());
-            ps.setInt(6, d.getSocial());
-            
-           
-			n=ps.executeUpdate();
+            PreparedStatement ps=con.prepareStatement("insert into dbname.TestAttendance(Day,month,Student_id,Attendance_id) values (?,?,?,?)");  
+            ps.setInt(1,d.getDay());  
+            ps.setInt(2,d.getMonth());
+            ps.setInt(3, d.getStudent_id());
+            ps.setInt(4, d.getAtt_type());
+            n=ps.executeUpdate();
 			if(n!=0)
 			{
 				status="success";
@@ -43,4 +39,3 @@ return status;
 }
 	
 }
-

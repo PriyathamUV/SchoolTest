@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 15%;
+    padding: 30px;
+    height: 550px;
+    border-style: solid;
+    border-width: 1px;  
+    } /* Should be removed. Only for demonstration */
+    
+ .column2 {
+    float: left;
+    width: 70%;
+    padding: 10px;
+    height: 550px;
+    border-style: solid;
+    border-width: 1px;
+    }
+ .column3 {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    height: 550px;
+    border-style: solid;
+    border-width: 1px;
+    }
+    
+    .row
+    {
+    border-style: solid;
+    border-width: 1px;
+    }
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+</head>
+<body>
+
+<center>
+<h2>MY E-LEARNING</h2>
+</center>
+
+<div class="row" style="background-color:lightgrey;">
+<div class="column" style="background-color:;">
+</div>
+<div class="column1"  >
+<a href="intro.html"  style="color:black"> INTRODUCTION TO JAVA</a><br>
+<br>
+<a href="oops.html"   style="color:black">OOPS CONCEPTS</a><br>
+<br>
+<a href="strings.html"  style="color:black" > STRINGS</a><br>
+<br>
+<a href="collections.html"  style="color:black" > COLLECTIONS</a><br>
+<br>
+<a href="multi.html"  style="color:black" > MULTI THREADING</a><br>
+<br>
+<a href="exception.html"  style="color:black" > EXCEPTION HANDLING</a><br>
+<br>
+<a href="swings.html"  style="color:black" > SWINGS</a><br>
+<br>
+<a href="generics.html"  style="color:black" > GENERICS</a><br>
+<br>
+<a href="synchronisation.html"  style="color:black" > SYNCHRONISATION</a><br>
+<br>
+<a href="JDBC.html"   style="color:black">JDBC</a><br>
+<br>
+<a href="servlets.html"   style="color:black">SERVLETS</a><br>
+<br>
+<a href="jsp.html"   style="color:black">JSP</a><br>
+<br>
+ </div>
+ 
+  <div class="column2" style="background-color:;">
+  <center>
+  <h4>Java Swings</h4>
+ <p style="text-align:justify">
+Java Swing tutorial is a part of Java Foundation Classes (JFC) that is used to create window-based applications. It is built on the top of AWT (Abstract Windowing Toolkit) API and entirely written in java.
+
+Unlike AWT, Java Swing provides platform-independent and lightweight components.
+
+The javax.swing package provides classes for java swing API such as JButton, JTextField, JTextArea, JRadioButton, JCheckbox, JMenu, JColorChooser etc. </h4>
+  What is JFC
+The Java Foundation Classes (JFC) are a set of GUI components which simplify the development of desktop applications.
+  Java Swing Examples
+There are two ways to create a frame:
+
+By creating the object of Frame class (association)
+By extending Frame class (inheritance)
+We can write the code of swing inside the main(), constructor or any other method.
+</p> <p style="text-align:justify">
+SWING - Controls
+
+Every user interface considers the following three main aspects −
+
+UI Elements − These are the core visual elements the user eventually sees and interacts with. GWT provides a huge list of widely used and common elements varying from basic to complex, which we will cover in this tutorial.
+
+Layouts − They define how UI elements should be organized on the screen and provide a final look and feel to the GUI (Graphical User Interface). This part will be covered in the Layout chapter.
+
+Behavior − These are the events which occur when the user interacts with UI elements. This part will be covered in the Event Handling chapter.
+</p>
+  </center>
+  
+  
+  <a style="background-color: grey;
+    border: none;
+    /* color: white; */
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float:left;border-radius: 12px; position: absolute; bottom: 0;
+    left: 0;" href="exception.html" ><button>BACK</button></a>
+  
+  <a style="background-color: grey;
+    border: none;
+    /* color: white; */
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float:right;border-radius: 12px; position: absolute; bottom: 0;
+    right: 0;" href="generics.html" ><button>NEXT</button></a>
+  </div>
+  
+  <div class="column3" style="background-color:;">
+  <img src="java.jpg" alt="java" width="180" height="530"> 
+  </div>
+  
+</div>
+
+</body>
+</html>

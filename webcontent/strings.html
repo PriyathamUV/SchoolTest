@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 15%;
+    padding: 30px;
+    height: 550px;
+    border-style: solid;
+    border-width: 1px;  
+    } /* Should be removed. Only for demonstration */
+    
+ .column2 {
+    float: left;
+    width: 70%;
+    padding: 10px;
+    height: 550px;
+    border-style: solid;
+    border-width: 1px;
+    }
+ .column3 {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    height: 550px;
+    border-style: solid;
+    border-width: 1px;
+    }
+    
+    .row
+    {
+    border-style: solid;
+    border-width: 1px;
+    }
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+</head>
+<body>
+
+<center>
+<h2>MY E-LEARNING</h2>
+</center>
+
+<div class="row" style="background-color:lightgrey;">
+<div class="column" style="background-color:;">
+</div>
+<div class="column1"  >
+<a href="intro.html"  style="color:black"> INTRODUCTION TO JAVA</a><br>
+<br>
+<a href="oops.html"   style="color:black">OOPS CONCEPTS</a><br>
+<br>
+<a href="strings.html"  style="color:black" > STRINGS</a><br>
+<br>
+<a href="collections.html"  style="color:black" > COLLECTIONS</a><br>
+<br>
+<a href="multi.html"  style="color:black" > MULTI THREADING</a><br>
+<br>
+<a href="exception.html"  style="color:black" > EXCEPTION HANDLING</a><br>
+<br>
+<a href="swings.html"  style="color:black" > SWINGS</a><br>
+<br>
+<a href="generics.html"  style="color:black" > GENERICS</a><br>
+<br>
+<a href="synchronisation.html"  style="color:black" > SYNCHRONISATION</a><br>
+<br>
+<a href="JDBC.html"   style="color:black">JDBC</a><br>
+<br>
+<a href="servlets.html"   style="color:black">SERVLETS</a><br>
+<br>
+<a href="jsp.html"   style="color:black">JSP</a><br>
+<br>
+ </div>
+ 
+  <div class="column2" style="background-color:;">
+  <center>
+  <h4>Java String</h4>
+  <p style="text-align:justify">
+In java, string is basically an object that represents sequence of char values.
+ An array of characters works same as java string.
+ Java String class provides a lot of methods to perform operations on string such as compare(), concat(), equals(), split(), length(), replace(), compareTo(), intern(), substring() etc.
+
+The java.lang.String class implements Serializable, Comparable and CharSequence interfaces.
+
+  What is String in java
+Generally, string is a sequence of characters. But in java, string is an object that represents a sequence of characters. The java.lang.String class is used to create string object.
+
+How to create String object?
+There are two ways to create String object:
+By string literal
+By new keyword
+
+</p> <p style="text-align:justify">
+1) String Literal
+Java String literal is created by using double quotes. For Example:
+
+String s="welcome";  
+Each time you create a string literal, the JVM checks the string constant pool first. If the string already exists in the pool, a reference to the pooled instance is returned. If string doesn't exist in the pool, a new string instance is created and placed in the pool. For example:
+
+String s1="Welcome";  
+String s2="Welcome";//will not create new instance  
+java string literal
+In the above example only one object will be created. Firstly JVM will not find any string object with the value "Welcome" in string constant pool, so it will create a new object. After that it will find the string with the value "Welcome" in the pool, it will not create new object but will return the reference to the same instance.
+
+Note: String objects are stored in a special memory area known as string constant pool.
+</p> <p style="text-align:justify">Why java uses concept of string literal?
+To make Java more memory efficient (because no new objects are created if it exists already in string constant pool).
+
+2) By new keyword
+String s=new String("Welcome");//creates two objects and one reference variable  
+In such case, JVM will create a new string object in normal(non pool) heap memory and the literal "Welcome" will be placed in the string constant pool. The variable s will refer to the object in heap(non pool).
+
+<p>
+  </center>
+  
+  <a style="background-color: grey;
+    border: none;
+    /* color: white; */
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float:left;border-radius: 12px; position: absolute; bottom: 0;
+    left: 0;" href="oops.html" ><button>BACK</button></a>
+  
+  <a style="background-color: grey;
+    border: none;
+    /* color: white; */
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float:right;border-radius: 12px; position: absolute; bottom: 0;
+    right: 0;" href="collections.html" ><button>NEXT</button></a>
+  </div>
+  
+  <div class="column3" style="background-color:;">
+   <img src="java.jpg" alt="java" width="180" height="530"> 
+  </div>
+  
+</div>
+
+</body>
+</html>
